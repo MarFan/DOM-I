@@ -10,7 +10,7 @@ function increment() {
     }else{
         document.querySelector('#msTens').textContent = '0';
         document.querySelector('#msHundreds').textContent = '1';
-        //document.querySelector('#colon ~ div').style.color = "red";
+        // document.querySelector('#colon ~ div.digit').style.color = "red";
         document.querySelector('#msTens').style.color = 'red';
         document.querySelector('#msHundreds').style.color = 'red';
         clearInterval(myTimer);
