@@ -84,11 +84,11 @@ let ctaImg = cta.querySelector('img').src = siteContent["cta"]["img-src"];
 
 const mainContent = document.querySelector('.main-content');
 let mainTopContent = mainContent.querySelector('.top-content');
-let topContentH4 = mainTopContent.querySelector('div:first-child h4').textContent = siteContent["main-content"]["features-h4"]
-let topContentP = mainTopContent.querySelector('div:first-child p').textContent =  siteContent["main-content"]["features-content"]
+let topContentH4 = mainTopContent.querySelector('div:first-child h4').textContent = siteContent["main-content"]["features-h4"];
+let topContentP = mainTopContent.querySelector('div:first-child p').textContent =  siteContent["main-content"]["features-content"];
 
-let topContentH42 = mainTopContent.querySelector('div:nth-child(2) h4').textContent = siteContent["main-content"]["about-h4"]
-let topContentP2 = mainTopContent.querySelector('div:nth-child(2) p').textContent =  siteContent["main-content"]["about-content"]
+let topContentH42 = mainTopContent.querySelector('div:nth-child(2) h4').textContent = siteContent["main-content"]["about-h4"];
+let topContentP2 = mainTopContent.querySelector('div:nth-child(2) p').textContent =  siteContent["main-content"]["about-content"];
 
 let mainMiddleImg = mainContent.querySelector('.middle-img').setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
@@ -108,7 +108,7 @@ let mainBottomLastP = mainBottomLast.querySelector('p').textContent = siteConten
 
 const contact = document.querySelector('.contact');
 let contactTitle = contact.querySelector('h4:nth-child(1)').textContent = siteContent['contact']['contact-h4'];
-let contactAddress = contact.querySelector('p').textContent = siteContent['contact']['address'];
+let contactAddress = contact.querySelector('p:nth-of-type(1)').textContent = siteContent['contact']['address'];
 let contactPhone = contact.querySelector('p:nth-last-child(2)').textContent = siteContent['contact']['phone'];
 let contactEmail = contact.querySelector('p:last-child').textContent = siteContent['contact']['email'];
 
